@@ -3,7 +3,7 @@ import axios from "axios";
 export default async function getFixturesByTeamId(teamId) {
   try {
     const response = await axios.get(
-      `http://localhost:8080/api/v1/fixtures/getFixtures/${teamId}`
+      `https://football-fixtures-production.up.railway.app/api/v1/fixtures/getFixtures/${teamId}`
     );
     if (response.status === 200) {
       const responseObj = response.data;

@@ -3,7 +3,7 @@ import axios from "axios";
 export default async function createTeam(formData) {
   try {
     const response = await axios.post(
-      "https://football-fixtures-production.up.railway.app/api/v1/teams/createTeam",
+      "http://localhost:8080/api/v1/teams/createTeam",
       formData
     );
     const resObj = response.data;
